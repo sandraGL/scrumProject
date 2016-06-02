@@ -15,6 +15,19 @@
                 <button id="nuevo_sprint">Nuevo Sprint</button>
             </div>
         </header>
+        <div class="ventana" id="ventanaHistoria">
+            <h1>Nueva historia</h1>
+		<ul>
+                    <li><label for="nombre_historia">Nombre</label><input type="text" id="nombre_historia"/></li>
+                    <li><textarea id="descripcion_historia" placeholder="Descripción"></textarea></li>
+                    <li><label for="valor_negocio">Valor de negocio</label><input type="number" id="valor_negocio"/></li>
+                </ul>
+		<button id="cancelar">Cancelar</button>
+		<button id="enviar">Enviar</button>
+	</div>
+
+	<div class="fadebox" id="fadebox"></div>
+        
         <div class="backlog">
             <h1>Backlog</h1>
         </div>
@@ -24,5 +37,11 @@
         <div class="sprint_backlog">
             <h1>Sprint Backlog</h1>
         </div>
+        
+        <script src="botones.js"></script>
+        <script src="nueva_historia.js"></script>
+        <script>
+            botones.init();
+        </script>
     </body>
 </html>
