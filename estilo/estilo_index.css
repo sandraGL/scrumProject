@@ -31,3 +31,10 @@ div h1{
     text-shadow: 1px 5px 8px #000099;
     font-style: italic;
 }
+div.botones{
+    margin-top: -105px;
+    float: right;
+    position: relative;
+    box-shadow: none;
+    border: none;
+}
