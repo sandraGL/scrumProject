@@ -67,6 +67,11 @@ div.botones{
 .ventana ul li {
     font-size: 14px;
     margin: 5px;
+    text-align: left;
+}
+#nombre_historia{
+    width: 48%;
+    margin-left: 5px;
 }
 textarea{
     width:59%;
@@ -74,6 +79,9 @@ textarea{
 }
 #valor_negocio{
     width:20%;
+    margin-left: 5px;
+}
+#color_historia{
     margin-left: 5px;
 }
 .fadebox{
