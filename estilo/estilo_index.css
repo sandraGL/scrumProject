@@ -21,6 +21,7 @@ div{
     border: 1px solid #2b357b;
     display: inline-block;
     box-shadow: 1px 1px 5px #2b357b;
+    background-color:wheat;
 }
 div h1{
     font-family: arial;
@@ -37,6 +38,7 @@ div.botones{
     position: relative;
     box-shadow: none;
     border: none;
+    background-color: transparent;
 }
 .ventana{
     position: absolute;
@@ -96,4 +98,14 @@ textarea{
     z-index: 1001;
     -moz-opacity:0.3;
     opacity: .3;
+}
+.historia{
+    width: 90%;
+}
+.backlog .historia ul{
+    list-style: none;
+}
+.backlog .historia ul li{
+    font-size: 1.4em;
+    margin-right: 250px;
 }
