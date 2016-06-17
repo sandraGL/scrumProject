@@ -14,6 +14,9 @@ header{
     text-shadow: 1px 5px 8px #000099;
     font-style: italic;
 }
+div.backlog, div.sprints, div.sprint_backlog{
+    float: left;
+}
 div{
     text-align: center;
     width: 30%;
@@ -106,6 +109,21 @@ textarea{
     list-style: none;
 }
 .backlog .historia ul li{
-    font-size: 1.4em;
-    margin-right: 250px;
+    font-size: 1.2em;
+    margin-left: -60px;
+    width: 90%;
+}
+span{
+    float: right;
+    margin-right: 20px;
+}
+input#modificar_historia{
+    width: 30px;
+    height: 30px;
+    margin-left: -190px;
+}
+input#eliminar_historia{
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
 }

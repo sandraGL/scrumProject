@@ -13,6 +13,14 @@ var nueva_historia = {
           document.getElementById("descripcion_historia").value = "";
           document.getElementById("valor_negocio").value = "";
           document.getElementById("color_historia").value = "";
+      },
+      titulo: function(estado, id){
+          var titulo = document.getElementById("titulo_historia");
+          if (estado == 1){
+              titulo.innerHTML = "Crear nueva historia";
+          } else {
+              titulo.innerHTML = "Modificar historia " + id;
+          }
       }
   },
   
@@ -49,7 +57,7 @@ var nueva_historia = {
       
       var div = document.createElement("div");
 
-			var historiaBox = "<ul><li>" + datos.nombre + "</li><li>" + datos.descripcion + "</li></ul><span>" + datos.valor_negocio + "</span>";
+			var historiaBox = "<ul><li>" + datos.nombre + "</li><li>" + datos.descripcion + "</li></ul><span>Valor: " + datos.valor_negocio + "</span><input type='image' src='editar.png' id='modificar_historia' onclick='modificar_historia.init(this.parentNode.getElementsByTagName(\"li\")[0].textContent)'/><input type='image' src='eliminar.png' id='eliminar_historia' onclick='eliminar_historia.init(this.parentNode.getElementsByTagName(\"li\")[0].textContent)'/>";
 			
 			var id_historia = datos.nombre;
 

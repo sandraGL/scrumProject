@@ -16,7 +16,7 @@
             </div>
         </header>
         <div class="ventana" id="ventanaHistoria">
-            <h1>Nueva historia</h1>
+            <h1 id="titulo_historia"></h1>
 		<ul>
                     <li><label for="nombre_historia">Nombre</label><input type="text" id="nombre_historia"/></li>
                     <li><textarea id="descripcion_historia" placeholder="Descripción"></textarea></li>
@@ -31,17 +31,27 @@
         
         <div class="backlog" id="backlog">
             <h1>Backlog</h1>
+            <div class="historia" id="hola">
+                <ul>
+                    <li>Hola</li>
+                    <li>Hola holita vecinito</li>
+                </ul>
+                <span>Valor: 10</span>
+                <input type='image' src='editar.png' id='modificar_historia' onclick='modificar_historia.init(this.parentNode.getElementsByTagName("li")[0].textContent)'/>
+                <input type='image' src='eliminar.png' id='eliminar_historia' onclick='eliminar_historia.init(this.parentNode.getElementsByTagName(\li")[0].textContent)'/>
+            </div>
         </div>
-        <div class="sprints">
+        <div class="sprints" id="sprint">
             <h1>Sprints</h1>
         </div>
-        <div class="sprint_backlog">
+        <div class="sprint_backlog" id="sprint_backlog">
             <h1>Sprint Backlog</h1>
         </div>
         
         <script src="botones.js"></script>
         <script src="nueva_historia.js"></script>
         <script src="logicaTarea.js"></script>
+        <script src="modificar_historia.js"></script>
         <script>
             botones.init();
         </script>
